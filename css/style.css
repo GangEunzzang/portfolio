@@ -19,7 +19,7 @@ body{
 }
 
 #top{
-  background-image:url("/portfolio/img/about.jpg");
+  background-image:url("./img/about.jpg");
   width: 100%px;
   height: 700px;
 }
