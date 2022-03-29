@@ -1,0 +1,104 @@
+body{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+.sub_menu{
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+#top{
+    background-image:url("/img/about.jpg");
+    width: 100%px;
+    height: 700px;
+}
+
+.header{
+    color: white;
+}
+
+#header_left{
+    font-size: 35px;
+    padding-top: 10px;
+    padding-left: 45%;
+    margin: auto;
+}
+#header_right div{
+    float: right;
+    padding-right: 40px;
+}
+
+
+/* skills 부분 */
+#skills{
+    background-color: #F9C51D;
+    height: 500px;
+}
+
+
+
+/* Archiving 부분*/
+#archiving{
+    background-color: #222222;
+    height: 500px;
+}
+
+/* projects 부분 */
+#projects{
+    background-color: #1D809F;
+}
+
+.projects_sub_menu{
+    background-color: white;
+    width: 1050px;
+    height: 800px;
+    margin: auto;
+}
+
+.projects_title{
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+#archiving_container{
+    border: 10px solid green;
+    display: flex;
+}
+
+#archiving_github{
+    background-color: white;
+    border-radius: 20px;
+    width: 430px;
+    height: 300px;
+    float: left;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+#archiving_blog{
+    background-color: white;
+    border-radius: 20px;
+    width: 430px;
+    height: 300px;
+    float: left;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+    margin-left:30px
+}
+
+.archiving_img{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+

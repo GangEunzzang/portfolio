@@ -5,32 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="/css/style.css">
     <title> portfolio </title>
 
-    <style>
-        #top{
-            background-image:url("img/about.jpg");
-            width: 100%px;
-            height: 700px;
-        }
-
-        .header{
-            color: white;
-        }
-
-        #header_left{
-            font-size: 35px;
-            padding-top: 10px;
-            padding-left: 45%;
-            margin: auto;
-        }
-        #header_right div{
-            float: right;
-            padding-right: 40px;
-        }
-
-    </style>
 </head>
 <body>
 
@@ -55,8 +32,10 @@
     </h1>
     </div>
 
+
+ <!-- 프로필 소개  -->
     <div id="about">
-        <div class ="sub menu"> ABOUT ME </div>
+        <div class ="sub_menu"> ABOUT ME </div>
         <div id = "about_under">
             <div id="about_under_name"> 
                 <i class="fas fa-person"></i>
@@ -93,15 +72,47 @@
                 <h3> 학력 </h3>
                 <p>목원대학교(컴퓨터공학과)</p>
             </div>
-            
-
         </div>
 
-
-
-        </div>
-
+ <!-- skills 시작 -->
+    <div id = "skills">
+        <div class="sub_menu"> Skills</div>
     </div>
+
+
+<!-- Archiving 시작-->
+    <div id ="archiving">
+        <div class="sub_menu"> Archiving</div>
+        
+        <div id="archiving_container">
+            <div id="archiving_github">
+                <div class="archiving_img">
+                    <img src="/img/github.jpg" alt="github 이미지" width="200px" > 
+                </div>
+            </div>
+
+            <div id="archiving_blog">
+                <div class="archiving_img">
+                    <img src="/img/tistory.png" alt="tistory 이미지" width="200px" > 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- projects 시작 -->
+    <div id="projects">
+        <div class="sub_menu"> projects</div>
+        <div class="projects_sub_menu">
+            <div class ="projects_title">
+                쿠팡이츠 데모 사이트
+            </div>
+            <div class="projects_main">
+                이미지.
+            </div>
+        </div>
+    </div>
+
+    
 
 </body>
 </html>
