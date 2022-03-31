@@ -5,31 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/portfolio/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title> portfolio </title>
 
+    <script>
+        $(function(){
+            if($(window).scrollTop() >= 1000){
+            $('a').css("color","black");
+            }
+        });
+    </script>
 
 
 </head>
 <body>
     <div id ="top">
+        <!-- 메뉴 시작 -->
       <div class ="header">
-          <div id = "header_left"> LGE's Portfolio </div>
-          <div id = "header_right">       
-              <div> About me </div>
-              <div> Skiils </div>
-              <div> Archiving </div>
-              <div> Projects </div>
-              <div> Career </div>  
-          </div>
+          <div id ="pin"></div>
+         <h1 id="logo">
+             <a href="#">
+                 <span>LGE</span> 
+             </a>
+         </h1>
+         <div id="nav">
+             <nav class="nav">
+                 <ul>
+                     <li>
+                         <a href="#about">about me</a>
+                     </li>
+                     <li>
+                         <a href="#skills">skills</a>
+                     </li>
+                     <li>
+                        <a href="#archiving">archiving</a>
+                    </li>
+                    <li>
+                        <a href="#projects">projects</a>
+                    </li>
+                 </ul>
+             </nav>
+         </div> 
       </div>
-      <h1>- 이강은 - <br>
-        웹 개발자 포토폴리오
-    </h1>
+    
     </div>
 
     <div id="about">

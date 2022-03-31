@@ -1,11 +1,99 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   padding: 0px;
   border: 0px;
   margin: 0px;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+#pin{
+left: 2px;
+top: 44.5px;
+width: 100px;
+height: 1px;
+background-color: #1b71e3;
+z-index: 999;
+}
+
+.header {
+  z-index: 9999;
+  position: fixed;
+  padding-top: 10px;
+  width: 100%;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  background-color: #858a8428;
+  
+}
+#logo{
+  margin-left:30px;
+  font-family: 'Graduate';
+  font-size: 35px;
+  line-height: 1.4;
+  font-style: normal;
+  text-align: center;
+  margin-right: auto;
+}
+
+ /* --------------------- menu (nav) ----------------------*/
+/*
+ .header {width: 96%; height: 90px;z-index: 5000; opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; left: 2%; top: 25px;
+  border: 1px solid #2e2e2e;
+  backdrop-filter: blur(5px);
+  animation: header 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+#logo {width: 65px; height: 65px; padding: 7px; margin: 12px; display: inline-block;
+  font-size: 30px; line-height: 1.4; font-style: normal; text-align: center; color: #fff;
+  font-family: 'Graduate';
+  border: 5px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: logo 2s forwards;
+  animation-delay: 6.2s;
+} 
+
+.header.active #logo span {color: #000; border: 5px solid #000}
+.header.active .nav li a {color: #000}
+.header.active .nav li a span {color: #999}
+.header.active .ham span {background: #000}
+*/
+
+
+#nav {
+  margin-right: 4vw; 
+  font-family: 'Poppins';
+}
+
+.nav li {display: inline-block; overflow: hidden; position: relative}
+.nav li + li {margin-left: 3vw}
+.nav li a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.nav li a span {display: block;
+    font-size: 14px; font-weight: 200; line-height: 1; color: #e9e9e9;
+}
+.nav li a::after {content: ""; width: 0; height: 2px; display: block;
+    background-color: skyblue;
+    transition: width .5s;
+}
+.nav li:hover a{color: skyblue}
+.nav li:hover a::after{width: 100%}
 
 
 
+/* 서브   제목 */
 .sub_menu{
   font-size: 50px;
   text-align: center;
@@ -19,32 +107,17 @@ body{
 }
 
 #top{
-  background-image:url("./img/about.jpg");
-  width: 100%px;
-  height: 700px;
+  /*background-image:url("/img/about.jpg"); */
+  background-color: #171717;
+  height: 1000px;
+  background-size: contain;
 }
 
 .header{
   color: white;
 }
 
-#header_left{
-  font-size: 35px;
-  padding-top: 10px;
-  padding-left: 45%;
-  margin: auto;
-}
-#header_right div{
-  float: right;
-  padding-right: 40px;
-}
-#top h1{
-  color : white;
-  font-size: 50px;
-  text-align:center;
-  border: 1px solid black;
-  margin-top: 80px;
-}
+
 
 #about_under{
   text-align: center;
