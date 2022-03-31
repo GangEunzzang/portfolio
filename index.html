@@ -7,79 +7,81 @@
     <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <title> portfolio </title>
-
-    <script>
-        $(function(){
-            if($(window).scrollTop() >= 1000){
-            $('a').css("color","black");
-            }
-        });
-    </script>
-
 
 </head>
 <body>
-    <div id ="top">
-        <!-- 메뉴 시작 -->
-      <div class ="header">
-          <div id ="pin"></div>
-         <h1 id="logo">
-             <a href="#">
-                 <span>LGE</span> 
-             </a>
-         </h1>
-         <div id="nav">
-             <nav class="nav">
-                 <ul>
-                     <li>
-                         <a href="#about">about me</a>
-                     </li>
-                     <li>
-                         <a href="#skills">skills</a>
-                     </li>
-                     <li>
-                        <a href="#archiving">archiving</a>
-                    </li>
-                    <li>
-                        <a href="#projects">projects</a>
-                    </li>
-                 </ul>
-             </nav>
-         </div> 
-      </div>
-    
+
+    <div class ="header">
+        <div id ="pin"></div>
+        <h1 id="logo">
+            <a href="#"><span>LGE</span></a>
+        </h1>
+
+        <div id="nav">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#archiving">archiving</a></li>
+                    <li><a href="#projects">projects</a></li>
+                </ul>
+            </nav>
+        </div> 
     </div>
 
+    <div id ="top">
+        <!-- 메뉴 시작 -->
+        <div id ="intro">
+            <h2>
+            Lee Gang Eun
+            </h2>
+            <span>안녕하세요! :)<br>
+            공부가 취미인 웹 개발자입니다.<br>
+            개발자를 꿈꾸며 준비한 제 노력물들을 보실 수 있습니다.
+            </span>
+        </div>
+        <img src="img/lEE.jpg" alt="증명사진">
+    </div>
+
+    <!-- about me 시작 !!!!!!!! -->
     <div id="about">
         <div class ="sub_menu"> ABOUT ME </div>
-        <div id = "about_under">
-            <div id="about_under_name"> 
-                <i class="fas fa-person"></i>
+        <div id = "about_container">
+            <div id="about_container_name">     
+                <div class="icon">
+                    <p><img src="img/about me/about_icon01.png"></p>
+                </div>
                 <h3> 이름 </h3><br>
                 <span>이강은</span>
             </div>
             
-            <div id="about_under_email"> 
-                <i class="fa-solid fa-envelope"></i>
+            <div id="about_container_email"> 
+                <div class="icon">
+                    <p><img src="img/about me/about_icon03.png"></p>
+                </div>
                 <h3> 이메일 </h3><br>
                 <span>rkddms123456@gmail.com</span>
             </div>
 
-            <div id="about_under_certificate"> 
-                <i class="fa-solid fa-pencil"></i>
+            <div id="about_container_certificate">
+                <div class="icon">
+                    <p><img src="img/about me/about_icon02.png"></p>
+                </div>
                 <h3> 자격증 </h3><br>
                 <span>정보처리기사</span>
             </div>
-            
-             <!-- skills 시작 -->
-    <div id = "skills">
-        <div class="sub_menu" style=" width: 180px;"  > SKILLS</div>
+        </div>
     </div>
+
+
+    <!-- skills 시작 -->
+    <div id = "skills">
+        <div class="sub_menu" style=" width: 180px;"> SKILLS</div>
+    </div>
+    
 
 
 <!-- Archiving 시작-->
@@ -98,33 +100,27 @@
                     <img src="./img/tistory.png" alt="tistory 이미지" width="200px" > 
                 </div>
             </div>
-        </div>
     </div>
 
 <!-- projects 시작 -->
     <div id="projects">
         <div class="sub_menu"> PROJECTS</div>
             <div class="projects_sub_menu">
-                <div class ="projects_title">
-                    쿠팡이츠 데모 사이트
-                </div>
-                <div class="projects_main">
-                    이미지.
-                </div>
-            </div>  
-        </div>
+                <div class ="projects_title">쿠팡이츠 데모 사이트</div>
+                <div class="projects_main">이미지</div>
+            </div>
     </div>
 
  <!-- footer 시작 -->
    <div id="footer">
-            <div id="container">
-                <div id="icon">
-                    <i class="fab fa-facebook" > </i>
-                    <i class="fab fa-instagram" ></i>
-                    <i class="fa-brands fa-github"></i>
+         <div id="container">
+            <div id="icon">
+                <i class="fab fa-facebook" > </i>
+                <i class="fab fa-instagram" ></i>
+                <i class="fa-brands fa-github"></i>
 
-                </div>
             </div>
+        </div>
    </div>
 
 </body>

@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Poppins', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
-/* font-family: 'Graduate', cursive; */
+        /* font-family: 'Graduate', cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Montserrat', sans-serif; */
+        /* font-family: 'Montserrat', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
         /* font-family: 'Ephesis', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        /* font-family: 'Black Han Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        /* font-family: 'Gothic A1', sans-serif; */
+        
 
 @font-face {
     font-family: 'JSDongkang-Regular';
