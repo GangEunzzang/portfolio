@@ -15,8 +15,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
         /* font-family: 'Gothic A1', sans-serif; */
-        
 
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        /* font-family: 'Hahmlet', serif; */
 @font-face {
     font-family: 'JSDongkang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
