@@ -18,6 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
         /* font-family: 'Hahmlet', serif; */
+  
 @font-face {
     font-family: 'JSDongkang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
@@ -30,10 +31,15 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'S-CoreDream-5Medium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Janlan';
+    src:url('/img/font/here/Jalnan.ttf');
     font-weight: normal;
     font-style: normal;
 }

@@ -171,7 +171,7 @@ a{
 }
 #about h3{
   font-size: 20px;
-  font-family: Gothic A1;
+  font-family: 'janlan';
   font-weight: bold;
 }
 
@@ -233,19 +233,18 @@ a{
 }
 
 .store_img{
-  padding:15px 0px 14px 15px ; /* 상우하좌 순서 (시계방항) */
+  padding:15px 0px 25px 20px ; /* 상우하좌 순서 (시계방항) */
 }
 
 .store_text b{
-  font-family: 'Hahmlet';
-  font-weight: 600;
+  font-family:'Janlan';
   font-size: 20px;
   padding-left: 50px;
 }
 
 .store_text li{
   list-style: none;
-  font-family: 'Hahmlet';
+  font-family: 'S-CoreDream-5Medium';
   font-weight: 300;
 }
 .store_text li::before{
@@ -262,30 +261,87 @@ a{
 }
 
 
-
-
-
-
-
-
 /* projects 부분 */
 #projects{
   background-color: #FAFAFA;
 }
 
 .projects_sub_menu{
-  background-color: #E5F0FF;
-  width: 1050px;
-  height: 800px;
+  background-color: #E9E9E9;
+  width: 50%;
+  height: 680px;
   margin: auto;
+  margin-bottom: 150px;
+  margin-top: 80px;
+  padding: 50px 50px;       /* 상우하좌 (시계방향 순서) */
 }
 .projects_title{
-  padding-top: 50px;
-  color: black;
-  text-align: center;
-  font-size: 25px;
+  font-family: 'Janlan';
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 25px;
 }
 
+.projects_title small{
+  font-family: 'Gothic A1';
+  font-size: 13px;
+  color: #000000af;
+  margin-left: 68px;
+}
+
+.projects_image{
+  float: left;
+  width: 30%;
+  margin-top: 100px;
+  box-sizing: border-box;
+  line-height: 130px;
+}
+.projects_image img{
+  width: 350px;
+}
+
+.projects_main{
+  float: right;
+  width: 55%;
+  margin-top: 30px; 
+  padding-top: 15px;
+  border-left: 1.3px solid gray;
+  height: 580px;
+}
+.projects_main b{
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 18px;
+  margin-left: 30px;
+}
+.projects_main li{
+  list-style:none;
+  font-family: 'GowunBatang-Regular';
+  line-height: 20px;
+  display: inline-block;
+}
+.projects_main li::before{
+  content: "-";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 5px 6px 0px;
+}
+
+.projects_main button{
+  width: 150px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 15px;
+  color: white;
+  border-radius: 7px;
+  background-color:#00AFFF;
+  border: none;
+  font-family: 'JaJSDongkang-Regularnlan';
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block ;
+}
 
 
 /* footer */
@@ -293,14 +349,53 @@ a{
   height: 180px;
   background-color: #222222;
 }
+#container{
+    text-align: center;
+}
 #icon{
   font-size: 30px;
   color: white;  
   display: inline-block;
-  padding-left: 45%;
-  padding-top: 40px;
+  margin-top: 50px;
 }
 #icon i{
-  border: 5px solid white;
+  border: 1px solid white;
   border-radius: 50%; 
+  cursor: pointer;
+  padding: 10px;
 }
+#icon :hover{
+  border: 1.5px solid rgba(12, 184, 132, 0.685);
+
+}
+
+#copyright{
+  margin-top: 23px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Gothic A1';
+  font-weight: 200;
+}
+
+
+/* TOP 버튼 */
+#scroll-to-top {
+  display: block;
+  position: fixed;
+  bottom: 25px;
+  right: 10%;
+  font-size: 20px;
+  opacity: 0;
+  z-index: 99;
+  text-align: center;
+}
+
+#scroll-to-top span {
+  cursor: pointer;
+  color: #20271cbd;
+}
+
+#scroll-to-top span :hover{
+  color:rgba(0, 0, 0, 0.884);
+}
+
