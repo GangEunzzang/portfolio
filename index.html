@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>    
+
     <script type="text/javascript" src="js/script.js"></script>
+    
     <title> portfolio </title>
 
 </head>
 <body>
-
     <div class ="header">
         <div id ="pin"></div>
         <h1 id="logo">
@@ -40,7 +41,7 @@
             </h2>
             <span>안녕하세요! :)<br>
             공부가 취미인 웹 개발자입니다.<br>
-            개발자를 꿈꾸며 준비한 제 노력물들을 보실 수 있습니다.
+            개발자를 꿈꾸며 준비한 제 과정을 보실 수 있습니다.
             </span>
         </div>
         <img src="img/lEE.jpg" alt="증명사진">
@@ -56,7 +57,7 @@
                 </div>
                 <h3> 개발을 좋아하는 웹 개발자 </h3>
                 <span>어제의 나보다 더 나은 사람이 되자!</span><br>
-                <span>하고싶은걸 하기 위해 정체되어 있지 않고</span><br>
+                <span>하고 싶은 걸 하기 위해 정체돼 있지 않고</span><br>
                 <span>발전하기 위해 노력합니다.</span>
                 
             </div>
@@ -105,7 +106,7 @@
                     <img src="./img/github.png" alt="github 이미지" width="200px" height="55" > 
                 </div>
                 
-                <div class="store_text">
+                <div class="store_text">                
                     <b> 코드 공유 및 저장소 </b>
                     <ul>
                         <li>풀어본 문제 코드 저장</li>
@@ -134,9 +135,38 @@
 <!-- projects 시작 -->
     <div id="projects">
         <div class="sub_menu"> PROJECTS</div>
-            <div class="projects_sub_menu">
-                <div class ="projects_title">쿠팡이츠 데모 사이트</div>
-                <div class="projects_main">이미지</div>
+
+            <div class="projects_sub_menu"> 
+                
+                <div class ="projects_title">쿠팡이츠 데모 사이트 <br>
+                    <small>2022.04 (개인 프로젝트)</small>
+                </div>
+
+                <div class="projects_image">
+                    <img src="img/projects/coupangeats/쿠팡.png" >
+                </div>
+
+                <div class="projects_main">
+                    <b> ⦁ 개발 내용</b>
+                    <ul>
+                        <li>Bootstrap을 이용한 기본 레이아웃 구성</li>
+                        <li>slick slider을 이용한 slider 기능 구현</li>
+                        <li>@media를 이용한 반응형 웹 구현</li>
+                        <li>iframe을 이용한 Youtube 동영상 재생</li>
+                    </ul>
+
+                    <br><br>
+                    <b> ⦁ 기술 스택 & 라이브러리</b>
+                    <ul>
+                        <li>HTML , CSS, JavaScript</li><br>
+                        <li>Slick Slider</li><br>
+                        <li>BootStrap</li><br>
+                        <li>jQuery</li>
+                    </ul>
+                    <br><br>
+                    <button onclick="window.open('https:gangeunzzang.github.io/coupangeats/')">홈페이지 바로가기</button> <br>
+                    <button onclick="window.open('https:github.com/GangEunzzang/coupangeats/blob/main/README.md/')">README.md</button>
+                </div>
             </div>
     </div>
 
@@ -144,13 +174,22 @@
    <div id="footer">
          <div id="container">
             <div id="icon">
-                <i class="fab fa-facebook" > </i>
-                <i class="fab fa-instagram" ></i>
-                <i class="fa-brands fa-github"></i>
-
+                <i class="fab fa-facebook" onclick="window.open('https:www.facebook.com/profile.php?id=100004044534911')" > </i>
+                <i class="fab fa-instagram" onclick="window.open('https:www.instagram.com/igangeun/')"></i>
+                <i class="fa-brands fa-github" onclick="window.open('https:github.com/GangEunzzang')"></i>
+            </div>
+            <div id="copyright">
+                LeeGangEun (&copy;) PORTFOLIO 
             </div>
         </div>
    </div>
+
+   <div id='scroll-to-top'>
+    <span class='fa-stack fa-lg'>
+        <i class='fa fa-circle fa-stack-2x' id="circle"></i>
+        <i class='fa fa-angle-double-up fa-stack-1x fa-inverse up-arrow'></i>
+    </span>
+</div>
 
 </body>
 </html>
