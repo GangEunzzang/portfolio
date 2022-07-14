@@ -9,8 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/44d763aa33.js" crossorigin="anonymous"></script>    
 
-    <script type="text/javascript" src="js/script.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>    
     <title> portfolio </title>
 
 </head>
@@ -49,7 +51,7 @@
 
     <!-- about me 시작 !!!!!!!! -->
     <div id="about">
-        <div class ="sub_menu"> ABOUT ME </div>
+        <h2 class ="sub_menu"> ABOUT ME </h2>
         <div id = "about_container">
             <div id="about_container_name">     
                 <div class="icon">
@@ -78,8 +80,8 @@
                 </div>
                 <h3> 자격증 </h3>
                 <span>정보처리기사</span><br>
-                <span> SQL Developer(SQLD)</span><br>
-                <span>MOSS Word, Access </span>
+                <span>MOSS Word</span><br>
+                <span>MOSS Access</span>
                 
 
                 <!-- <li>정보처리기사</li>
@@ -92,81 +94,130 @@
 
     <!-- skills 시작 -->
     <div id = "skills">
-        <div class="sub_menu" style=" width: 180px;"> SKILLS</div>
+        <h2 class="sub_menu" >SKILLS</h2>
+        <div id="skill_main">
+            <img src="/img/skill/front.JPG">
+            <img src="/img/skill/back.JPG">
+            <img src="/img/skill/DB.JPG">   
+        </div>
     </div>
     
 
 
 <!-- store 시작-->
     <div id ="store">
-        <div class="sub_menu" style="width: 200px;"> STORE</div>
+        <h2 class="sub_menu">STORE</h2>
         <div id="store_container">
-            <div id="store_github" onclick="window.open('https:github.com/GangEunzzang')">
-                <div class="store_img">
-                    <img src="./img/store/github.png" alt="github 이미지" width="200px" height="55" > 
-                </div>
-                
-                <div class="store_text">                
-                    <b> 코드 공유 및 저장소 </b>
-                    <ul>
-                        <li>풀어본 문제 코드 저장</li>
-                        <li>프로젝트 코드 저장</li>
-                        <li>수업 시간 진행한 내용 저장</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div id="store_blog" onclick="window.open('https:leeprogramer.tistory.com')">
-                <div class="store_img">
-                    <img src="./img/store/tistory.png" alt="tistory 이미지" width="200px" height="55">
-                </div>
+            <a href="http://github.com/GangEunzzang" target="_blank">
+                <div id="store_github">
+                    <div class="store_img">
+                        <img src="./img/store/github.png" alt="github 이미지" width="200px" height="55" > 
+                    </div>
 
-                <div class="store_text">
-                    <b>기억보다 기록을</b>
-                    <ul>
-                        <li>내 것을 만들기 위한 과정</li>
-                        <li>성장 과정 브랜딩</li>
-                        <li>정리하는 습관 들이기</li>
-                    </ul>
+                    <div class="store_text">                
+                        <b> 코드 공유 및 저장소 </b>
+                        <ul>
+                            <li>풀어본 문제 코드 저장</li>
+                            <li>프로젝트 코드 저장</li>
+                            <li>수업 시간 진행한 내용 저장</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </a>
+            
+            <a href="http://leeprogramer.tistory.com" target="_blank">
+                <div id="store_blog">
+                    <div class="store_img">
+                        <img src="./img/store/tistory.png" alt="tistory 이미지" width="200px" height="55">
+                    </div>
+
+                    <div class="store_text">
+                        <b>기억보다 기록을</b>
+                        <ul>
+                            <li>내 것을 만들기 위한 과정</li>
+                            <li>성장 과정 브랜딩</li>
+                            <li>정리하는 습관 들이기</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
 <!-- projects 시작 -->
     <div id="projects">
-        <div class="sub_menu"> PROJECTS</div>
-
+        <h2 class="sub_menu"> PROJECTS</h2>
+            
+            <!-- 쿠팡잇츠 시작-->
             <div class="projects_sub_menu"> 
+                <span class ="projects_title">쿠팡이츠 데모 사이트 </span>
+                <span class="projects_sub_title">2022.04 (개인 프로젝트)</span>
                 
-                <div class ="projects_title">쿠팡이츠 데모 사이트 <br>
-                    <small>2022.04 (개인 프로젝트)</small>
+                <div class="projects_content">
+
+                    <div class="projects_image">
+                        <img src="img/projects/coupangeats/쿠팡.png">
+                    </div>
+
+                    <div class="projects_main">
+                        <b> ⦁ 개발 내용</b>
+                        <ul>
+                            <li>Bootstrap을 이용한 기본 레이아웃 구성</li>
+                            <li>slick slider을 이용한 slider 기능 구현</li>
+                            <li>@media를 이용한 반응형 웹 구현</li>
+                            <li>iframe을 이용한 Youtube 동영상 재생</li>
+                        </ul>
+
+                        <br><br>
+                        <b> ⦁ 기술 스택 & 라이브러리</b>
+                        <ul>
+                            <li>HTML , CSS, JavaScript</li>
+                            <li>Slick Slider</li>
+                            <li>BootStrap</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <br><br>
+                    
+                        <a href="http://gangeunzzang.github.io/coupangeats/" target="_blank"> <button>홈페이지 바로가기 </button></a>
+                        <a href="http://github.com/GangEunzzang/coupangeats/" target="_blank"><button >README.md</button></a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="projects_image">
-                    <img src="img/projects/coupangeats/쿠팡.png" >
-                </div>
+            <!-- go-seoul 시작-->
+            <div class="projects_sub_menu"> 
+                <span class ="projects_title">서울 여행 사이트</span>
+                <span class="projects_sub_title">2022.06.14 ~ 2022.07.12(팀 프로젝트)</span>
 
-                <div class="projects_main">
-                    <b> ⦁ 개발 내용</b>
-                    <ul>
-                        <li>Bootstrap을 이용한 기본 레이아웃 구성</li>
-                        <li>slick slider을 이용한 slider 기능 구현</li>
-                        <li>@media를 이용한 반응형 웹 구현</li>
-                        <li>iframe을 이용한 Youtube 동영상 재생</li>
-                    </ul>
+                
+                <div class="projects_content">
+                    <div class="projects_image ">
+                        <img src="/img/projects/go-seoul/index.png">
+                    </div>
 
-                    <br><br>
-                    <b> ⦁ 기술 스택 & 라이브러리</b>
-                    <ul>
-                        <li>HTML , CSS, JavaScript</li><br>
-                        <li>Slick Slider</li><br>
-                        <li>BootStrap</li><br>
-                        <li>jQuery</li>
-                    </ul>
-                    <br><br>
-                   <!--<button onclick="window.open('https:gangeunzzang.github.io/coupangeats/')">홈페이지 바로가기</button> <br> -->
-                    <a href="https:gangeunzzang.github.io/coupangeats/" target="_blank"> <button>홈페이지 바로가기 </button></a>
-                    <button onclick="window.open('https:/github.com/GangEunzzang/coupangeats/blob/main/README.md/')">README.md</button>
+                    <div class="projects_main">
+                        <b> ⦁ 개발 내용</b>
+                        <ul>
+                            <li>구글 로그인 & 네이버 로그인 구현</li>
+                            <li>댓글 Starrr 라이브러리 별점기능</li>
+                            <li>파일첨부 게시판 구현 및 썸네일 기능</li>
+                            <li>AWS 배포(WAR)</li>
+                        </ul>
+
+                        <br><br>
+                        <b> ⦁ 기술 스택 & 라이브러리</b>
+                        <ul>
+                            <li>HTML , CSS, JavaScript, jQuery, BootStrap, Starrr, Ajax</li>
+                            <li>Spring Boot, Security, JPA, Thymeleaf </li>
+                            <li>MariaDB</li>
+                            <li>AWS(EC2)</li>
+                        </ul>
+                        <br><br>
+                    
+                        <a href="http://가자서울.shop" target="_blank"> <button>홈페이지 바로가기 </button></a>
+                        <a href="https://github.com/GangEunzzang/go-seoul" target="_blank"><button >README.md</button></a>
+                    </div>
                 </div>
             </div>
     </div>

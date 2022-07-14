@@ -198,15 +198,35 @@ a{
 /* skills 부분 */
 #skills{
   background-color: #FAFAFA;
-  height: 500px;
+  height: 600px;
 }
 
+#skill_main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#skill_main img{
+  border-radius: 10px;
+}
+
+#skill_main img:hover{
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+
+#skill_main img:nth-child(2) {
+  margin-right: 50px;
+}
 
 
 /* store 부분*/
 #store{
   background-color: #E9E9E9;
-  height: 1200px;
+  height: 600px;
 }
 
 #store_container{
@@ -267,6 +287,7 @@ a{
 }
 
 .projects_sub_menu{
+  display: block;
   background-color: #E9E9E9;
   width: 50%;
   height: 680px;
@@ -278,31 +299,39 @@ a{
 .projects_title{
   font-family: 'Janlan';
   font-size: 30px;
-  display: inline-block;
-  margin-left: 25px;
+  display: block;
+  text-align: center;
 }
 
-.projects_title small{
+.projects_sub_title{
   font-family: 'Gothic A1';
   font-size: 13px;
   color: #000000af;
-  margin-left: 68px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+.projects_content{
+  display: flex;
+  width: 100%;
 }
 
 .projects_image{
-  float: left;
+  box-sizing: border-box;
   width: 30%;
-  margin-top: 100px;
+  margin-top: 30px;
+  margin-right: 6rem;
   box-sizing: border-box;
   line-height: 130px;
+
 }
 .projects_image img{
-  width: 350px;
+  width: 18.5vw;
 }
 
 .projects_main{
-  float: right;
-  width: 55%;
+  box-sizing: border-box;
   margin-top: 30px; 
   padding-top: 15px;
   border-left: 1.3px solid gray;
@@ -312,15 +341,16 @@ a{
   font-family: 'S-CoreDream-5Medium';
   font-size: 18px;
   margin-left: 30px;
+  display: block;
 }
 .projects_main li{
   list-style:none;
   font-family: 'GowunBatang-Regular';
   line-height: 20px;
-  display: inline-block;
+  display: block;
 }
 .projects_main li::before{
-  content: "-";
+  content: "->";
   display: inline-block;
   vertical-align: middle;
   padding: 0px 5px 6px 0px;
@@ -365,8 +395,7 @@ a{
   padding: 10px;
 }
 #icon :hover{
-  border: 1.5px solid rgba(12, 184, 132, 0.685);
-
+  border: 1px solid rgba(12, 184, 132, 0.685);
 }
 
 #copyright{
