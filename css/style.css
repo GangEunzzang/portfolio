@@ -71,7 +71,7 @@ a{
   float: left;
 }
 #intro h2{
-  font-size: 90px;
+  font-size: 4rem;
   font-family: 'Poppins';
 }
 #intro span{  
@@ -90,6 +90,7 @@ a{
     transition: all 0.2s ease-in-out;
     overflow: hidden;
 }
+
 /* 사진 마우스 오버시 트랜스폼  */
 #top img:hover{
   transform: scale(1.3);
@@ -103,24 +104,46 @@ a{
   font-family: 'Poppins';
 }
 
-.nav li {display: inline-block; overflow: hidden; position: relative}
-.nav li + li {margin-left: 3vw}
+.nav li {
+  display: inline-block;
+  overflow: hidden; 
+  position: relative}
+
+.nav li + li {
+  margin-left: 3vw
+}
+
 .nav li a {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
 }
-.nav li a span {display: block;
-  font-size: 14px; font-weight: 200; line-height: 1; color: #e9e9e9;
+
+.nav li a span {
+  display: block;
+  font-size: 14px; 
+  font-weight: 200; 
+  line-height: 1; 
+  color: #e9e9e9;
 }
-.nav li a::after {content: ""; width: 0; height: 2px; display: block;
+.nav li a::after {
+  content: ""; 
+  width: 0; 
+  height: 2px; 
+  display: block;
   background-color: gray;
   transition: width .5s;
 }
+
 .nav li:hover a{color: gray}
 .nav li:hover a::after{width: 100%}
 
 
+#menu-list{
+  color: white;
+  font-size: 2em;
+  display: none;
+}
 
 /* about me 부분 */
 
@@ -162,12 +185,15 @@ a{
   border-radius: 50%;
   padding: 10px;    
 }
+
+@media screen and (min-width:900px){
 .icon p:hover{
-  border:2px solid black;
+  border:1px solid black;
   transition: .1s ease-in-out;
   animation: motion 0.3s /* 속도 */
   linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
   infinite alternate; /* 무한 반복 */
+}
 }
 #about h3{
   font-size: 20px;
@@ -204,7 +230,6 @@ a{
 #skill_main {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   margin-top: 50px;
 }
 
@@ -327,7 +352,7 @@ a{
 
 }
 .projects_image img{
-  width: 18.5vw;
+  width: 330px;
 }
 
 .projects_main{
@@ -428,3 +453,131 @@ a{
   color:rgba(0, 0, 0, 0.884);
 }
 
+
+@media screen and (max-width:900px){
+  
+  .nav{
+    display: none;
+  }
+
+  #menu-list{
+    display: flex;
+    margin-right: 30px;
+  }
+
+  /* 소개 */
+  #top {
+    height: 700px;
+  }
+
+  #intro{
+    padding-left: 30px;
+  }
+
+  #intro h2{
+    font-size: 3rem;
+  }
+
+  #intro span{
+    font-size: 1rem;
+  }
+
+  #top img{
+    display: none;
+  }
+
+  .sub_menu{
+    font-size: 2rem;
+  }
+
+  /* about me 시작 */
+
+  #about{
+    height: 890px;
+  }
+  #about_container{
+    flex-direction: column;
+
+  }
+
+  #about_container_name, #about_container_email, #about_container_certificate{ 
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #about h3{
+    font-size: 1.2rem;
+    margin-top: -3px;
+  }
+
+  #about span{
+    font-size: 0.8rem;
+    line-height: 10px;
+  }
+
+  .icon img{
+    width: 30px;
+  }
+
+  /* skill 시작*/
+
+  #skills{
+    height: 1200px;
+  }
+
+  #skill_main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skill_main img{
+    width: 300px;
+  }
+
+  #skill_main img:nth-child(2){
+    margin: 20px auto;
+  }
+
+  #skill_main img:hover{
+    cursor: auto;
+    transform: scale(1.0);
+  }
+
+  /* store 시작*/
+  #store{
+    height: 750px;
+  }
+
+  #store_container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #store_github{
+    margin: 0 0 50px 0;
+  }
+
+  #store_github, #store_blog{
+    width: 350px;
+    height: 230px;
+  }
+
+  #store_github:hover , #store_blog:hover{
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.0);
+  }
+
+  .store_img img{
+    width: 185px;
+    height: 50px;
+  }
+
+  .store_text li{
+    font-size: 0.8rem;
+  }
+
+  
+
+}
