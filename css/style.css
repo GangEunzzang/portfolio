@@ -405,7 +405,7 @@ a{
   background-color: #222222;
 }
 #container{
-    text-align: center;
+  text-align: center;
 }
 #icon{
   font-size: 30px;
@@ -413,14 +413,24 @@ a{
   display: inline-block;
   margin-top: 50px;
 }
+
+
+#icon a:nth-child(1){
+  color: #139EF8 !important;
+}
+
+#icon a:nth-child(2){
+  color: #FE1A62 !important;
+}
+
+#icon a:nth-child(3){
+  color: white !important;
+}
+
+
 #icon i{
-  border: 1px solid white;
-  border-radius: 50%; 
   cursor: pointer;
   padding: 10px;
-}
-#icon :hover{
-  border: 1px solid rgba(12, 184, 132, 0.685);
 }
 
 #copyright{
@@ -560,7 +570,7 @@ a{
 
   #store_github, #store_blog{
     width: 350px;
-    height: 230px;
+    height: 260px;
   }
 
   #store_github:hover , #store_blog:hover{
@@ -578,6 +588,61 @@ a{
     font-size: 0.8rem;
   }
 
+  /* projects 시작 */
   
+  .projects_sub_menu{
+    width: 70%;
+    height: 1150px;
+  }
+
+  .projects_content{
+    flex-direction: column;
+  }
+  
+  .projects_image{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 10px;
+  }
+
+  .projects_image img{
+    width: 20rem;
+    height: 30rem;
+  }
+  
+  .projects_main{
+    box-sizing: border-box;
+    margin-top: 30px; 
+    padding-top: 15px;
+    border-top: 1.3px solid gray;
+    border-left: none;
+    height: 580px;
+  }
+
+  .projects_main b{
+    font-size: 1rem;
+  }
+
+  .projects_main li{
+    font-size: 0.9rem;
+  }
+
+  .projects_main button{
+    width: 130px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+    color: white;
+    border-radius: 7px;
+    background-color:#00AFFF;
+    border: none;
+    font-family: 'JaJSDongkang-Regularnlan';
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-block ;
+  }
 
 }
