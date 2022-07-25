@@ -15,6 +15,7 @@ a{
   color: white;
 }
 
+
 /* 서브   제목 */
 .sub_menu{
   font-size: 50px;
@@ -344,7 +345,6 @@ a{
 
 .projects_image{
   box-sizing: border-box;
-  width: 30%;
   margin-top: 30px;
   margin-right: 6rem;
   box-sizing: border-box;
@@ -360,7 +360,9 @@ a{
   margin-top: 30px; 
   padding-top: 15px;
   border-left: 1.3px solid gray;
-  height: 580px;
+  width: auto;
+  min-width: 500px;
+  height: auto;
 }
 .projects_main b{
   font-family: 'S-CoreDream-5Medium';
@@ -593,8 +595,9 @@ a{
   /* projects 시작 */
   
   .projects_sub_menu{
-    width: 70%;
+    width: auto;
     height: 1150px;
+    margin: 30px auto;
   }
 
   .projects_content{
@@ -619,7 +622,7 @@ a{
     padding-top: 15px;
     border-top: 1.3px solid gray;
     border-left: none;
-    height: 580px;
+    height: auto;
   }
 
   .projects_main b{
