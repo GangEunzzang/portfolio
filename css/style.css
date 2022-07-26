@@ -361,7 +361,6 @@ a{
   padding-top: 15px;
   border-left: 1.3px solid gray;
   width: auto;
-  min-width: 500px;
   height: auto;
 }
 .projects_main b{
@@ -384,8 +383,8 @@ a{
 }
 
 .btn_con{
-  display: flex;
-  justify-content: space-evenly;
+  display: inline-block;
+  margin-left: 2rem;
 }
 
 .projects_main button{
@@ -622,6 +621,7 @@ a{
     padding-top: 15px;
     border-top: 1.3px solid gray;
     border-left: none;
+    width: auto;
     height: auto;
   }
 
@@ -633,6 +633,9 @@ a{
     font-size: 0.9rem;
   }
 
+  .btn_con{
+    justify-content: center;
+  }
   .projects_main button{
     width: 130px;
     height: 40px;
@@ -646,5 +649,4 @@ a{
     cursor: pointer;
     display: inline-block ;
   }
-
 }
