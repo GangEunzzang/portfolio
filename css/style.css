@@ -361,7 +361,7 @@ a{
   padding-top: 15px;
   border-left: 1.3px solid gray;
   width: auto;
-  min-width: 500px;
+  min-width: 5a00px;
   height: auto;
 }
 .projects_main b{
@@ -595,7 +595,7 @@ a{
   /* projects 시작 */
   
   .projects_sub_menu{
-    width: auto;
+    width: 300px;
     height: 1150px;
     margin: 30px auto;
   }
